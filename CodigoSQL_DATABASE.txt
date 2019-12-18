@@ -1,0 +1,51 @@
+CREATE TABLE usuario (
+    dni INTEGER PRIMARY KEY,
+    nombres varchar(100),
+    papellido varchar(100),
+    sapellido varchar(100),
+    usuario varchar(100),
+    contrasena varchar(100),
+    ciudad varchar(100),
+    mail varchar(100)
+);
+
+CREATE TABLE admin (
+    dni INTEGER PRIMARY KEY,    
+    papellido varchar(100),
+    sapellido varchar(100),
+    nombres varchar(100),
+    contrasena varchar(100)
+    ciudad varchar(100),
+    mail varchar(100),
+    sueldo numeric(10,2),
+);
+
+CREATE TABLE producto(
+	codigo_producto INTEGER PRIMARY KEY,    
+    stock INTEGER,
+    marca varchar(100),
+    precio INTEGER,
+    talla varchar(100),
+    imagen varchar(100),
+    genero varchar(100)
+
+);
+
+CREATE TABLE compra(
+	id_prodcuto INTEGER,
+	id_usuario INTEGER,
+	fecha date,
+);
+
+CREATE TABLE hombre (
+	codigo_producto_hombre INTEGER PRIMARY KEY 
+);
+
+CREATE TABLE mujer (
+	codigo_producto_hombre INTEGER PRIMARY KEY
+);
+
+CREATE TABLE almacen (
+	id_almacen numeric PRIMARY KEY,
+	capacidad numeric
+);

@@ -1,0 +1,77 @@
+DELIMITER //
+CREATE PROCEDURE nuevo_user (IN dni INTEGER ,
+                             IN nombres VARCHAR(150),
+                              IN papellido VARCHAR(100),
+                              IN sapellido VARCHAR(10,2),
+                              IN usuario VARCHAR(150),
+                              IN password varchar(80),
+                              IN ciudad VARCHAR(80),
+                              IN mail VARCHAR(80))
+BEGIN
+        INSERT INTO persona VALUES(dni,nombres,papellido,sapellido,usuario,password,ciudad,mail);
+
+END//
+
+DELIMITER //
+CREATE PROCEDURE nuevo_admin (IN dni INTEGER ,
+                             IN papellido VARCHAR(150),
+                              IN sapellido VARCHAR(100),
+                              IN nombres VARCHAR(80),
+                              IN contrasena VARCHAR(150),
+                              IN ciudad VARCHAR(80),
+                              IN mail VARCHAR(80)),
+                              IN sueldo numeric(10,2))
+BEGIN
+        INSERT INTO admin VALUES(dni,papellido,sapellido,nombres,contrasena,ciudad,mail,sueldo);
+END//
+
+DELIMITER //
+CREATE PROCEDURE registrar_producto (IN codigo_producto INTEGER ,
+                             IN stock VARCHAR(150),
+                              IN marca VARCHAR(100),
+                              IN precio VARCHAR(80),
+                              IN talla VARCHAR(150),
+                              IN genero_1 VARCHAR(80))
+BEGIN
+        INSERT INTO producto VALUES(codigo_producto,stock,marca,precio,talla,genero);
+  		IF(genero_1='M' ) THEN 
+  			INSERT INTO mujer VALUES (codigo_producto);
+  		END IF;
+  		IF(genero_1='V' ) THEN 
+  			INSERT INTO mujer VALUES (codigo_producto);
+  		END IF;  		     	
+END//
+
+
+
+DELIMITER //
+CREATE PROCEDURE sp_actulizar_producto (IN codigo_producto INTEGER)
+BEGIN
+  IF(SELECT stock FROM producto WHERE stock>0)
+       UPDATE producto SET stock =stock-1 WHERE codigo_producto=codigo_producto ;
+  END IF;         
+END//
+
+DELIMITER //
+
+CREATE PROCEDURE 
+  filtro_usuario( cuidad_e VARCHAR(100),apellido_e VARCHAR(100) )
+BEGIN  
+   SELECT * FROM persona
+    WHERE ciudad =cuidad_e
+    AND papellido=apellido_e;
+END 
+//
+
+
+DELIMITER//
+
+CREATE PROCEDURE 
+  filtro_producto( marca_e VARCHAR(100),talla_e VARCHAR(100) ,precio_e INT)
+BEGIN  
+   SELECT * FROM producto
+    WHERE marca =marca_e
+    AND talla=talla_e
+    AND precio=precio_e;
+END 
+//

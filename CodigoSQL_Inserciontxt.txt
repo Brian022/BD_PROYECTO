@@ -1,0 +1,50 @@
+Insertar Usuarios
+
+CALL nuevo_user(74596452,'Pedro','Perez','Mesa','PedroP','123','Arequipa','pedr123@gmail.com');
+CALL nuevo_user(74596453,'Jose','Meneses','Barracuda','JoseM','123','Arequipa','jose123@gmail.com');
+CALL nuevo_user(74596454,'Giancarlo','Perez','Villareal','GiancarloP','123','Arequipa','gianc123@gmail.com');
+CALL nuevo_user(74596455,'Maria','Perez','Ruiz','MariaP','123','Cuzco','mar123@gmail.com');
+CALL nuevo_user(74596456,'Fiorella','Toha','Mesa','PedroP','123','Arequipa','frll123@gmail.com');
+CALL nuevo_user(74596457,'Luis','Perez','Mesa','PedroP','123','Arequipa','luis123@gmail.com');
+CALL nuevo_user(74596458,'Yamile','Perez','Mesa','PedroP','123','Chimbote','yami123@gmail.com');
+CALL nuevo_user(74596459,'Ernesto','Barrios','Mesa','PedroP','123','Arequipa','ERNEST123@gmail.com');
+CALL nuevo_user(74596460,'Mario','Perez','Mesa','PedroP','123','Tingo Maria','mario_d@gmail.com');
+CALL nuevo_user(74596461,'Juan','Cedro','Mesa','PedroP','123','Arequipa','juanxx@gmail.com');
+CALL nuevo_user(74596462,'Zumba','Mamani','Mesa','PedroP','123','Pisco','zumzum@gmail.com');
+CALL nuevo_user(74596463,'Pedro','Perez','Mesa','PedroP','123','Arequipa','pedrooo123@gmail.com');
+CALL nuevo_user(74596464,'Henry','Quispe','Mesa','PedroP','123','Tarapoto','Henrya@gmail.com');
+CALL nuevo_user(74596465,'Pedro','Cholquehuanca','Mesa','PedroP','123','Arequipa','peasd123@gmail.com');
+
+Insertar Admin
+
+CALL nuevo_admin(123451,'Quispe','Perez','Francisco','123451','Arequipa','admin@live.com','10.00');
+CALL nuevo_admin(123452,'Quispe','DelCarpio','Patricia','123452','Arequipa','admin@live.com','100.00');
+CALL nuevo_admin(123453,'Quispe','Villanueva','Celinda','123453','Arequipa','admin@live.com','200.00');
+CALL nuevo_admin(123454,'Quispe','Villalobos','Milagros','123454','ciudad','admin@live.com','50.00');
+CALL nuevo_admin(123455,'Quispe','Sihuinta','Marisol','123455','Tacna','admin@live.com','20.00');
+CALL nuevo_admin(123456,'Quispe','Vargas','Juana','123456','Arequipa','admin@live.com','500.00');
+CALL nuevo_admin(123457,'Quispe','Mamani','Cecilia','123457','Juliaca','Juliaca@live.com','210.00');
+CALL nuevo_admin(123458,'Quispe','Corrales','Graciela','123458','Tacna','admin@live.com','50.00');
+CALL nuevo_admin(123459,'Quispe','Cedro','Fiorella','123459','Piura','admin@live.com','500.00');
+CALL nuevo_admin(123460,'Quispe','Pino','Yamile','123460','Puno','admin@live.com','50.00');
+CALL nuevo_admin(123461,'Quispe','Mesa','Maria','123461','Juliaca','admin@live.com','80.00');
+CALL nuevo_admin(123462,'Quispe','Martinez','Luis','123462','Arequipa','admin@live.com','50.00');
+CALL nuevo_admin(123463,'Quispe','Silva','Emanuel','123463','Cuzco','admin@live.com','300.00');
+CALL nuevo_admin(123464,'Quispe','Laquise','Brian','123464','Lima','admin@live.com','50.00');
+
+Insertar Productos
+
+CALL registrar_producto(2,'20','Adidas','50','32','ultraboost19.jpg','M');
+CALL registrar_producto(3,'10','Nike','75','32','alphaedge.jpg','M');
+CALL registrar_producto(4,'10','Nike','50','32','superstar.jpg','M');
+CALL registrar_producto(5,'15','Adidas','75','23','harden.jpg','M');
+CALL registrar_producto(6,'20','Nike','50','23','falcon.jpg','F');
+CALL registrar_producto(7,'25','Adidas','75','23','streetball.jpg','M');
+CALL registrar_producto(8,'50','Nike','50','32','predator.jpg','F');
+CALL registrar_producto(9,'400','Adidas','75','23','sl72.jpg','F');
+CALL registrar_producto(10,'100','Nike','20','32','torsionx.jpg','M');
+CALL registrar_producto(11,'60','Adidas','50','23','nemeziz.jpg','M');
+CALL registrar_producto(12,'8','Nike','50','32','kaptir.jpg','M');
+CALL registrar_producto(13,'14','Adidas','75','23','hoops.jpg','F');
+CALL registrar_producto(14,'24','Nike','50','32','advantage.jpg','F');
+CALL registrar_producto(15,'65','Adidas','45','23','nitejogger','M');
